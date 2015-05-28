@@ -4,11 +4,14 @@
   "description": "Simple, secure encryption and decryption with a sharded master key",
   "main": "lib/tomb.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node_modules/.bin/mocha"
   },
   "author": "Trey Griffith <trey@teleborder.com>",
   "license": "MIT",
   "dependencies": {
     "secrets.js": "^0.1.8"
+  },
+  "devDependencies": {
+    "mocha": "^2.2.5"
   }
 }
