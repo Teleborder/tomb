@@ -3,10 +3,13 @@
   "version": "0.0.1",
   "description": "Simple, secure encryption and decryption with a sharded master key",
   "main": "lib/tomb.js",
+  "keywords": ["tomb", "encryption", "iv", "shared", "sharded", "shamir"],
   "scripts": {
     "test": "node_modules/.bin/mocha"
   },
   "author": "Trey Griffith <trey@teleborder.com>",
+  "homepage": "https://github.com/Teleborder/tomb",
+  "repository": "Teleborder/tomb",
   "license": "MIT",
   "dependencies": {
     "secrets.js": "^0.1.8"
