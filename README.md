@@ -12,10 +12,19 @@ Usage
 var Tomb = require('tomb'),
     tomb = new Tomb();
 
+var shards = tomb.generateKey;
+
 // shards is an array of 5 master key shards, 3 of which are needed
 // to use the tomb
 // Store these shards away from the data and away from each other
-var shards = tomb.generateKey;
+console.log(shards);
+// [
+//  '801c2cf88c071961587f2535aa0bc74352669de05d4ba3796441fe3e9a492c001a329',
+//  '802b5987c3ee214d9e3aff9791ac9e7d93d15c48ad144dd8ae65108790553ab17abbb',
+//  '803761363ccec7ce0b3fae7917350edd5e57f3b9ff03e9df4bde263cbd26cd64ad357',
+//  '804c89a2fd966dffdd505222176cb5f23c000eec33808966ed169d06eac76062901ef',
+//  '8050b11302b68b7c485503cc91f52552f186a11d61972d6108adabbdc7b497b747903'
+// ]
 ```
 
 ### Unseal the tomb
@@ -33,7 +42,7 @@ var secret = "hello world";
 // unsealing is required prior to encrypting
 
 encryptedSecret = tomb.encrypt(secret);
-console.log(encryptedSecret); // asodfjsdfij
+console.log(encryptedSecret); // 202b65485c2c42ba090467a04d5104f883addcfb5e4a88485b09566e0181d680
 ```
 
 ### Decrypt data
