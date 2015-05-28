@@ -1,7 +1,4 @@
-var Tomb = require('./lib/tomb'),
-    Server = require('./lib/server'),
-    dns = require('dns'),
-    async = require('async');
+var Tomb = require('./lib/tomb');
 
 exports.Tomb = Tomb;
 exports.Server = Server;

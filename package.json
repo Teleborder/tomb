@@ -9,10 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "async": "^1.0.0",
-    "debug": "^2.2.0",
-    "jsencrypt": "^2.1.0",
-    "request": "^2.55.0",
     "secrets.js": "^0.1.8"
   }
 }
