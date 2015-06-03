@@ -3,6 +3,13 @@ Tomb
 
 Simple, secure encryption and decryption with a sharded master key.
 
+Installation
+------------
+
+```
+$ npm install --save tomb
+```
+
 Usage
 -----
 
